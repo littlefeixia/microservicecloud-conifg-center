@@ -1,31 +1,31 @@
 # micro-config-center-8200 服务-配置中心
 server: 
-	port: 8200
+  port: 8200
 
 # 服务名称
 spring:
-	application: 
-		name: micro-config-center-8200
-	profiles:
-		active: 
-			-dev
+  application: 
+    name: micro-config-center-8200
+      profiles:
+        active: 
+	  - dev
 
 ---
 # 开发环境配置信息dev
 server:
-	port: 8201
+  port: 8201
 
 spring: 
-	application: 
-		name: micro-config-center-8201
-	profiles: dev
+  application: 
+    name: micro-config-center-8201
+  profiles: dev
 
 ---
 # 测试环境配置信息test
 server:
-	port: 8202
+  port: 8202
 
 spring: 
-	application: 
-		name: micro-config-center-8202
-	profiles: test
+  application: 
+    name: micro-config-center-8202
+  profiles: test
