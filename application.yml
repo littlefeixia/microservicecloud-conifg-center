@@ -6,9 +6,8 @@ server:
 spring:
   application: 
     name: micro-config-center-8200
-      profiles:
-        active: 
-          - dev
+  profiles:
+    active: dev
 
 ---
 # 开发环境配置信息dev
